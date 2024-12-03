@@ -9,7 +9,6 @@ Welcome to simple-retico-agent's documentation!
 
    installation
    plot_and_visualization
-   simple_retico_agent
 
 .. include:: ../README.md
    :parser: myst

@@ -17,19 +17,19 @@ sys.path.insert(0, os.path.abspath(os.path.join("../src")))
 sys.path.insert(0, os.path.abspath(".."))
 
 # mock deps with system level requirements.
-autodoc_mock_imports = [
-    "torch",
-    "pydub",
-    "webrtcvad",
-    "transformers",
-    "faster_whisper",
-    "llama_cpp",
-    "TTS",
-    "pyaudio",
-    "numpy",
-    "retico_core",
-    # "retico-core @ git+https://github.com/articulab/retico-core.git",
-]
+# autodoc_mock_imports = [
+#     "torch",
+#     "pydub",
+#     "webrtcvad",
+#     "transformers",
+#     "faster_whisper",
+#     "llama_cpp",
+#     "TTS",
+#     "pyaudio",
+#     "numpy",
+#     "retico_core",
+#     # "retico-core @ git+https://github.com/articulab/retico-core.git",
+# ]
 
 import simple_retico_agent
 
@@ -51,7 +51,8 @@ author = "Marius Le Chapelier"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx.ext.autodoc",
+    "autoapi.extension",
+    # "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "myst_parser",
     "sphinx.ext.autosectionlabel",
