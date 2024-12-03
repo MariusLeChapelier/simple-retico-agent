@@ -34,7 +34,7 @@ sys.path.insert(0, os.path.abspath(".."))
 
 import simple_retico_agent
 
-autoapi_dirs = ["../src/simple_retico_agent/"]
+autoapi_dirs = ["../src/simple_retico_agent"]
 
 # import numpy  # mandatory import to avoid readthedocs build crash
 
