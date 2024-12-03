@@ -2,4 +2,4 @@ sphinx
 sphinx_rtd_theme
 myst-parser
 
-retico-core @ git+https://github.com/articulab/retico-core.git
+# retico-core @ git+https://github.com/articulab/retico-core.git

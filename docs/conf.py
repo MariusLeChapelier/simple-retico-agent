@@ -26,13 +26,14 @@ autodoc_mock_imports = [
     "llama_cpp",
     "TTS",
     "pyaudio",
-    # "numpy",
-    # "retico_core",
+    "numpy",
+    "retico_core",
     # "retico-core @ git+https://github.com/articulab/retico-core.git",
 ]
 
 import simple_retico_agent
-import numpy  # mandatory import to avoid readthedocs build crash
+
+# import numpy  # mandatory import to avoid readthedocs build crash
 
 # -- Project information -----------------------------------------------------
 
