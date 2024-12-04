@@ -2,5 +2,3 @@ sphinx
 sphinx_rtd_theme
 myst-parser
 sphinx-autoapi
-
-# retico-core @ git+https://github.com/articulab/retico-core.git
