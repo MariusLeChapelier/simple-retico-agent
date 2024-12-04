@@ -30,6 +30,7 @@ autoapi_options = [
     "show-module-summary",
     "special-members",
     "imported-members",
+    "module-first",
     # "undoc-members",
     # "inherited-members",
 ]

@@ -1,16 +1,44 @@
 {% if obj.display %}
    {% if is_own_page %}
-{{ obj.name.split('.')[-1] }}
-{{ "=" * obj.name.split('.')[-1]|length }}
 
-.. py:module:: {{ obj.name.split('.')[-1]}}
+{% set file_name_only = obj.name.split('.')[-1] %}
 
-      {% if obj.docstring %}
+{% if obj.docstring %}
+
+{% set splitted_docstring = obj.docstring.splitlines() %} 
+
+   {% if splitted_docstring[1] == ("=" * splitted_docstring[0]|length) %}
+
+{{ splitted_docstring[0] }}
+{{ splitted_docstring[1] }}
+
+.. py:module:: {{ file_name_only }}
+
 .. autoapi-nested-parse::
 
    {{ obj.docstring|indent(3) }}
 
-      {% endif %}
+   {% else %}
+
+{{ file_name_only }}
+{{ "=" * file_name_only|length }}
+
+.. py:module:: {{ file_name_only }}
+
+.. autoapi-nested-parse::
+
+   {{ obj.docstring|indent(3) }}
+
+   {% endif %}
+
+{% else %}
+
+{{ file_name_only }}
+{{ "=" * file_name_only|length }}
+
+.. py:module:: {{ file_name_only }}
+
+{% endif %}
 
       {% block submodules %}
          {% set visible_subpackages = obj.subpackages|selectattr("display")|list %}
