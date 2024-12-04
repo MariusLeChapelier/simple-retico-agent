@@ -12,3 +12,11 @@ Welcome to simple-retico-agent's documentation!
 
 .. include:: ../README.md
    :parser: myst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
