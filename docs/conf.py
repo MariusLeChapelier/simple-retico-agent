@@ -35,6 +35,8 @@ autoapi_options = [
     "inherited-members",
 ]
 
+autodoc_inherit_docstrings = True
+
 # -- Project information -----------------------------------------------------
 
 project = "simple-retico-agent"
