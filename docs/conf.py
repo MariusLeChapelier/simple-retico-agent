@@ -31,8 +31,8 @@ autoapi_options = [
     "special-members",
     "imported-members",
     "module-first",
-    # "undoc-members",
-    # "inherited-members",
+    "undoc-members",
+    "inherited-members",
 ]
 
 # -- Project information -----------------------------------------------------
