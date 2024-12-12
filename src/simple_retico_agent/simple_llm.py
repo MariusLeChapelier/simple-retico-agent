@@ -703,3 +703,5 @@ class SimpleLLMModule(retico_core.AbstractModule):
     def shutdown(self):
         super().shutdown()
         self.thread_active = False
+
+    shutdown.__doc__ = retico_core.AbstractModule.shutdown.__doc__
