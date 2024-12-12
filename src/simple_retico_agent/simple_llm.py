@@ -701,6 +701,5 @@ class SimpleLLMModule(retico_core.AbstractModule):
         threading.Thread(target=self._llm_thread).start()
 
     def shutdown(self):
-        """Shutdown the module and its separate Thread."""
         super().shutdown()
         self.thread_active = False
