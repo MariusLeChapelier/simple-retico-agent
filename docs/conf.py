@@ -35,7 +35,10 @@ autoapi_options = [
     "inherited-members",
 ]
 
-autodoc_inherit_docstrings = True
+autoapi_keep_files = True  # Optional, but keeps generated files for debugging
+autoapi_python_class_content = (
+    "both"  # Ensures that docstrings for both class and methods are included
+)
 
 # -- Project information -----------------------------------------------------
 
